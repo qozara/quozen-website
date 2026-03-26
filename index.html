@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quozen | Decentralized Expense Sharing</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --fg: #ededed;
+            --accent: #3b82f6;
+            --muted: #a1a1aa;
+            --card: #171717;
+        }
+
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            background: var(--bg);
+            color: var(--fg);
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.05em;
+        }
+
+        .nav-links a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--muted);
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--fg);
+        }
+
+        .hero {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            letter-spacing: -0.06em;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--muted);
+            max-width: 600px;
+            margin: 0 auto 2.5rem;
+        }
+
+        .btn {
+            background: var(--fg);
+            color: var(--bg);
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--fg);
+            border: 1px solid #333;
+            margin-left: 1rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+
+        .feature-card {
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #262626;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--accent);
+        }
+
+        .feature-card p {
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        footer {
+            margin-top: 8rem;
+            padding: 4rem 0;
+            border-top: 1px solid #171717;
+            color: var(--muted);
+            font-size: 0.85rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        footer a {
+            color: inherit;
+            text-decoration: none;
+            margin-left: 1rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">💸 QUOZEN</div>
+            <div class="nav-links">
+                <a href="https://qozara.org">A Qozara Lab Project</a>
+                <a href="https://github.com/qozara/quozen" target="_blank">Source Code</a>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <h1>Your Expenses. <br>Your Drive. Your AI.</h1>
+            <p>The first decentralized expense sharing platform that stores everything in your own Google Drive. No
+                servers, no tracking, just math.</p>
+            <div class="actions">
+                <a href="https://app.quozen.qozara.org" class="btn">Launch App</a>
+                <a href="https://github.com/qozara/quozen" class="btn btn-outline">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Decentralized Storage</h3>
+                <p>We don't have a database. Your groups, expenses, and settlements are stored as standard Google Sheets
+                    in your personal Drive.</p>
+            </div>
+            <div class="feature-card">
+                <h3>AI-Powered Parsing</h3>
+                <p>Natural language processing that works with your own API keys. "I paid $50 for pizza, split with
+                    Alice" is all it takes.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Privacy First</h3>
+                <p>Since the app is serverless, your financial data never touches our infrastructure. Total data
+                    sovereignty by design.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div>© 2026 Qozara · Built for the Open Source Community</div>
+            <div>
+                <a href="https://qozara.org/legal/quozen/privacy.html">Privacy Policy</a>
+                <a href="https://qozara.org/legal/quozen/tos.html">Terms of Service</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
